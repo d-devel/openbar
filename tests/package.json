@@ -9,5 +9,6 @@
   },
   "engines": {
     "node": ">=20.6.0"
-  }
+  },
+  "//engines": "20.6.0 is the floor for module.register(); CI runs the latest LTS (Node 24)"
 }

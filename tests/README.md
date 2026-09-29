@@ -9,7 +9,7 @@ simulated Shell in `fixtures/`, shaped after the GNOME 50 widget tree. In that s
 - `Gio.Settings` is backed by the real defaults from the extension's schema XML.
 
 ```bash
-cd tests && npm test          # requires Node.js 20.6 or newer
+cd tests && npm test          # requires Node.js 20.6 or newer; CI runs Node 24
 ```
 
 The script expands `./*.test.mjs`, so a new test file is picked up automatically. Note that
