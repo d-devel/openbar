@@ -1,6 +1,10 @@
 Theming Top Bar / Top Panel , Menus , Dash / Dock , Gnome Shell , Gtk Apps. 
 Open the bar and let the colors 🍹 flow.
 
+This is an unofficial fork of Open Bar by neuromorph (https://github.com/neuromorph/openbar),
+maintained by d-devel (https://d-devel.com) with GNOME 50 support. Not affiliated with or
+endorsed by the original author.
+
 **Please report on GitHub if something is broken due to an update or if you have any suggestions.
 
 •  Open Bar allows you to theme the Top Bar, Pop-up Menus, Dash, Dock and rest of the Gnome Shell.

@@ -1,0 +1,13 @@
+{
+  "name": "openbar-tests",
+  "version": "1.0.0",
+  "description": "Node-based tests for the Open Bar GNOME Shell extension (no external dependencies).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --import ./register.mjs ./*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  }
+}

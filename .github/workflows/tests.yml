@@ -1,0 +1,27 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  node-tests:
+    name: Node.js test suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install glib-compile-schemas (for the schema sync test)
+        run: sudo apt-get update -qq && sudo apt-get install -yq --no-install-recommends libglib2.0-bin
+
+      # The suite has no runtime dependencies and uses only Node's built-in test runner.
+      - name: Run tests
+        working-directory: tests
+        run: npm test

@@ -4,6 +4,13 @@
 
 A GNOME Shell extension for theming Gnome Top Bar / Top Panel, Menus, Dash/Dock, Gnome Shell and Gtk/Flatpak Apps.  
 
+> **This is an unofficial fork.** Open Bar was created by
+> [neuromorph](https://github.com/neuromorph/openbar), and this repository is
+> maintained independently by [d-devel](https://github.com/d-devel) because
+> upstream is not actively maintaining GNOME 50 support. It is not affiliated
+> with or endorsed by the original author. If you want the upstream release,
+> see the [extensions.gnome.org listing](https://extensions.gnome.org/extension/6580/open-bar/).
+
 ### Open Bar 2.0: 
 - Auto-theming completely renewed. Theme Options: Dark, Light, Pastel, True-Color
 - Apply styles to Bar, Menu, Dash / Dock and rest of the shell
@@ -54,26 +61,21 @@ etc.
 
 ### Recommended
 
-[<img alt="" height="100" src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true">](https://extensions.gnome.org/extension/6580/open-bar/)
+This fork is not published on extensions.gnome.org yet. Until it is, install
+it manually as described below, or use the _Extension Manager_ app pointed at
+your local copy.
 
-It's recommended to install the extension from
-[extensions website](https://extensions.gnome.org/extension/6580/open-bar/), or from
-the _Extension Manager_ app.
-
-
-### How to manually install the extension (if needed)?
+### How to manually install the extension
 
 ```
-git clone https://github.com/neuromorph/openbar.git \
-	~/.local/share/gnome-shell/extensions/openbar@neuromorph
+git clone https://github.com/d-devel/openbar.git \
+	~/.local/share/gnome-shell/extensions/openbar@ddevel
 ```
 OR download the code zip file and unzip at location: ~/.local/share/gnome-shell/extensions/
-The extension's directory name should match its uuid i.e. "openbar@neuromorph"
+The extension's directory name should match its uuid i.e. "openbar@ddevel"
 
-Note: 
-Please download from following GitHub branch as per your Gnome version:
-- For Gnome 42-44: branch 'g42-44'
-- For Gnome 45+: branch 'main'
+This fork supports GNOME Shell 45 through 50. For GNOME 42-44, use the
+upstream 'g42-44' branch.
 
 You will need to restart the Gnome Shell (for manual install):
 
@@ -139,7 +141,7 @@ Candybar Example:
 
 Window-Max Bar Example: 
 
-![WindowMaxBar](https://github.com/neuromorph/openbar/issues/17#issue-2186440177) 
+<video controls width="480" src="screens/OpenBar_WindowMax.webm"></video>
 
 More Examples: 
 ![Screenshot](screens/ego2.png)

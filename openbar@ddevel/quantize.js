@@ -1,10 +1,10 @@
 /*
- * quantize.js 
+ * quantize.js
  * Copyright 2008 Nick Rabinowitz
- * 
+ *
  * Ported to node.js by Olivier Lesnicki (https://github.com/olivierlesnicki/quantize)
  * Modified for pixel count by neuromorph (https://github.com/neuromorph/openbar)
- *  
+ *
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
  */
 
@@ -48,22 +48,22 @@ if (!pv) {
  * algorithm from the Leptonica library (http://www.leptonica.com/).
  * Returns a color map you can use to map original pixels to the reduced
  * palette. Still a work in progress.
- * 
+ *
  * @author Nick Rabinowitz
  * @example
- 
+
 // array of pixels as [R,G,B] arrays
 var myPixels = [[190,197,190], [202,204,200], [207,214,210], [211,214,211], [205,207,207]
                 // etc
                 ];
 var maxColors = 4;
- 
+
 var cmap = MMCQ.quantize(myPixels, maxColors);
 var newPalette = cmap.palette();
-var newPixels = myPixels.map(function(p) { 
-    return cmap.map(p); 
+var newPixels = myPixels.map(function(p) {
+    return cmap.map(p);
 });
- 
+
  */
 var MMCQ = (function() {
     // private constants
@@ -193,8 +193,8 @@ var MMCQ = (function() {
         },
         contains: function(pixel) {
             var vbox = this,
-                rval = pixel[0] >> rshift;
-            gval = pixel[1] >> rshift;
+                rval = pixel[0] >> rshift,
+            gval = pixel[1] >> rshift,
             bval = pixel[2] >> rshift;
             return (rval >= vbox.r1 && rval <= vbox.r2 &&
                 gval >= vbox.g1 && gval <= vbox.g2 &&
